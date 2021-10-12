@@ -39,3 +39,8 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+var logger = require('morgan');
+	
+// connect to the database with Mongoose
+require('./config/database');
